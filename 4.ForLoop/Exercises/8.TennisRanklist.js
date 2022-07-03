@@ -24,14 +24,16 @@ function solve(input) {
     let winsPercent = (wins / tournaments) * 100;
 
     console.log(`Final points: ${total}`);
-    console.log(`Average points: ${(total - startingPoints) / tournaments}`);
+    console.log(`Average points: ${Math.floor((total - startingPoints) / tournaments)}`);
     console.log(`${winsPercent.toFixed(2)}%`);
-
 }
-solve(["5",
-    "1400",
-    "F",
-    "SF",
-    "W",
-    "W",
-    "SF"])
+solve(["7",
+"1200",
+"SF",
+"F",
+"W",
+"F",
+"W",
+"SF",
+"W"])
+
